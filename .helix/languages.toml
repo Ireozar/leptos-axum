@@ -1,0 +1,8 @@
+[[language]]
+name = "rust"
+formatter = { command = "leptosfmt", args = ["--stdin", "--rustfmt"] }
+
+[language-server.rust-analyzer.config]
+cargo.allFeatures = true
+procMacro.ignored.leptos_macro = ["server"]
+procMacro.enable = true
